@@ -1,0 +1,174 @@
+.main_tbl_chk {
+    width: 20%;
+}
+
+.main_tbl_chk th, .main_tbl_chk td {
+    white-space: nowrap; 
+}
+
+.main_tbl_chk th:nth-child(1),
+.main_tbl_chk td:nth-child(1) {
+    width: 50px; 
+}
+
+.main_tbl_chk th:nth-child(2), .main_tbl_chk td:nth-child(2) {
+    width: 100px;
+}
+
+.main_tbl_chk {
+    width: 100%; 
+}
+
+.main_tbl_chk th, .main_tbl_chk td {
+    text-align: center; 
+}
+
+.main_tbl_chk thead th {
+    background-color: #f8f9fa;
+}
+
+.main_tbl_chk tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+
+.main_tbl_chk tbody td {
+    padding: 8px; 
+}
+
+.main_tbl_chk_paginate {
+    font-size: 14px;
+}
+
+
+#tbl_management{
+    width: 20%;
+}
+
+#tbl_report {
+    width: 20%;
+}
+
+#tbl_deposit{
+    width: 20%;
+}
+
+#tbl_management th,td{
+    white-space: nowrap; 
+}
+
+#tbl_report th,td{
+    white-space: nowrap; 
+}
+
+#tbl_deposit th,td{
+    white-space: nowrap; 
+}
+
+#tbl_management td:nth-child(1) {
+    width: 50px; 
+}
+
+#tbl_report td:nth-child(1) {
+    width: 50px; 
+}
+
+#tbl_deposit td:nth-child(1) {
+    width: 50px; 
+}
+
+#tbl_management td:nth-child(2) {
+    width: 100px;
+}
+
+#tbl_report td:nth-child(2) {
+    width: 100px;
+}
+
+#tbl_deposit td:nth-child(2) {
+    width: 100px;
+}
+
+#tbl_management{
+    width: 100%; 
+}
+#tbl_report{
+    width: 100%; 
+}
+#tbl_deposit{
+    width: 100%; 
+}
+
+#tbl_management th,td {
+    text-align: center; 
+}
+
+#tbl_report th,td {
+    text-align: center; 
+}
+
+#tbl_deposit th,td {
+    text-align: center; 
+}
+
+/* #tbl_management, #tbl_report, #tbl_management thead th {
+    background-color: #f8f9fa;
+}
+
+#tbl_management, #tbl_report, #tbl_management tbody tr:hover {
+    background-color: #e0e0e0; 
+} */
+
+#tbl_management,tbody td {
+    padding: 8px; 
+}
+
+#tbl_report,tbody td {
+    padding: 8px; 
+}
+
+#tbl_management,tbody td {
+    padding: 8px; 
+}
+
+#tbl_management_paginate, #tbl_report_paginate, #tbl_management_paginate {
+    font-size: 14px;
+}
+
+/* 
+    Deposit DataTable
+*/
+
+table.table-bordered.dataTable {
+    border-right-width: 0;
+}
+table.table-bordered.dataTable th,table.table-bordered.dataTable td {
+    border-left-width: 0;
+}
+table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable td:last-child,
+table.table-bordered.dataTable td:last-child {
+    border-right-width: 1px;
+}
+table.table-bordered.dataTable tbody th,
+table.table-bordered.dataTable tbody td {
+    border-bottom-width: 0;
+}
+
+div.dataTables_scrollHead table.table-bordered {
+    border-bottom-width: 0;
+}
+
+/* hidden */
+.hidden {
+    display: none;
+}
+
+.btn-excel {
+    background-color: #28a745;
+    border: 1px solid #218838;
+}
+
+.btn-excel:hover {
+    background-color: #218838;
+    color: #fff; 
+}

@@ -1,0 +1,6 @@
+package-lock.json
+# Dependency directories
+node_modules/
+production/
+uploads/*
+export/*

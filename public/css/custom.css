@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.table_post  {
+    width: 700px;
+}
+
+.genric-btn.selected {
+    background-color: #ffba00;
+    color: white;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.container, .container-fluid{
+    padding: 0rem;
+}
+
+.card-body {
+    padding-left: 0px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.show-loader{
+    display: block !important;
+}
+
