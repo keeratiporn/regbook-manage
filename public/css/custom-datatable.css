@@ -49,6 +49,7 @@ body {
     background: #00247c;
     font-weight: 700;
     color: #fff;
+    font-size: 15px;
 }
 .registration-container p{
     display: inline-block;
@@ -80,12 +81,6 @@ p.custom-col{
 }
 #s_results > div > div.hide-mobile > p:nth-child(5){
     width: 80px;
-}
-p.md-col {
-    width: 90px;
-}
-#result-registration > div > div.registration-title.registration-container.hide-mobile > p:nth-child(10){
-    width: 100px;
 }
 
 .registration-container .title, .registration-container .desc{
@@ -150,6 +145,9 @@ p.md-col {
 .card {
     border-radius: 20px 20px 20px 20px;
     padding-bottom:  40px;
+}
+#s_results {
+    font-size: 14px;
 }
 
 
