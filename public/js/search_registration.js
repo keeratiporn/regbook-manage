@@ -13,12 +13,12 @@ btnSubmit.addEventListener('click', () => {
                 headers: {
                     'Content-Type':'application/json'
                 },
+                // url: 'http://regbook.sia.co.th/search_vehicle_stock',
                 url: '/search_vehicle_stock',
-
                 data: JSON.stringify({"search": searchData}),
                 dataType: "JSON",
                 success: function (res) {
-                    //console.log(res)
+                    console.log(res)
                     
                     $('#result-registration').css('display', 'block');
                     $('#alert-message').css('display', 'none');
@@ -50,6 +50,9 @@ btnSubmit.addEventListener('click', () => {
             mobileContent.className = "hide-mobile";
             let formattedDateBook = !['',null,undefined].includes(result.date_books) ? 'รับเล่มได้ '+moment(result.date_books).format('DD-MM-YYYY') : 'รอเล่มทะเบียน';
             
+            if(result.model_sub == null || result.model_sub=="")  {
+                result.model_sub ="";
+            }
             const formattedDateAuction = moment(result.auction_date).format('DD-MM-YYYY');
 
             //const DateBookStatus = formattedDateBook == null ? formattedDateBook : 'รับเล่มได้';
@@ -61,9 +64,9 @@ btnSubmit.addEventListener('click', () => {
             <p class="large-col">${result.chassis_number}</p>
             <p>${formattedDateAuction}</p>
             <p class="medium-col">${result.sequence}</p>
-            <p>${result.model}</p>
-            <p>${result.model_sub}</p>
-            <p >${result.auction_location}</p>
+            <p>${result.product_brand}</p>
+            <p>${result.model} ${result.model_sub}</p>
+            <p>${result.auction_location}</p>
             <p class="big-col">${formattedDateBook}</p>
         `;
 
@@ -84,9 +87,9 @@ btnSubmit.addEventListener('click', () => {
             <div class="title">ลำดับ</div>
             <div class="desc">${result.sequence}</div>
             <div class="title">ยี่ห้อรถ</div>
-            <div class="desc">${result.model}</div>
+            <div class="desc">${result.product_brand}</div>
             <div class="title">รุ่น</div>
-            <div class="desc">${result.model_sub}</div>
+            <div class="desc">${result.model} ${result.model_sub}</div>
             <div class="title">สถานที่ประมูล</div>
             <div class="desc">${result.auction_location}</div>
             <div class="title">สถานะเล่มทะเบียน</div>
