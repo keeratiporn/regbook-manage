@@ -2,8 +2,7 @@
     <div class="row">
         <div class="col-12">
             <a href="http://www.sia.co.th/">
-                <img src="../assets/images/banner_logo.jpeg" class="img-fluid imglogo"
-                    alt="Responsive image">
+                <img src="../assets/images/banner_logo.jpeg" class="img-fluid imglogo" alt="Responsive image">
             </a>
         </div>
     </div>
@@ -21,12 +20,14 @@
                 <form>
                     <div class="row mt-5">
                         <div class="col col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
-                            <p style="font-size: 18px; line-height: 30px;">กรุณาพิมพ์ เลขทะเบียนรถ หรือ เลขตัวถังของรถ ที่ต้องการค้นหา</p>
+                            <p style="font-size: 18px; line-height: 30px;">กรุณาพิมพ์ เลขทะเบียนรถ หรือ เลขตัวถังของรถ
+                                ที่ต้องการค้นหา</p>
                             <div class="input-group">
                                 <input class="form-control border-end-0 border rounded-pill" type="search" value=""
                                     placeholder="เลขทะเบียนรถ หรือ เลขตัวถังของรถ ที่ต้องการค้นหา"
                                     id="search_registration">
-                                <button type="button" class="btn btn-success border-end-0 border rounded-pill ml-3 btn-lg"
+                                <button type="button"
+                                    class="btn btn-success border-end-0 border rounded-pill ml-3 btn-lg"
                                     id="btn-submit">
                                     ค้นหา
                                 </button>
@@ -35,7 +36,8 @@
                             </div>
                             {{!-- <div id="alert-message"></div> --}}
                             <div class="text mt-2">
-                                <span style="color:red; font-weight: 100; line-height: 30px;"> * หมายเหตุ กรุณาระบุ ทะเบียนรถ หรือ
+                                <span style="color:red; font-weight: 100; line-height: 30px;"> * หมายเหตุ กรุณาระบุ
+                                    ทะเบียนรถ หรือ
                                     เลขตัวถังของรถ ให้ครบถ้วน ตัวอย่าง 1กก 1111</span>
                             </div>
                         </div>
@@ -48,15 +50,15 @@
 <section class="search">
     {{!-- <h3 class="text-center text-secondary mt-5" id="registration_display">กรุณากรอกรายละเอียดเงื่อนไขเพื่อค้นหา .
         . .</h3> --}}
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="alert-message" class="alert alert-danger text-center" style="display: none;">
-                        ไม่สามารถค้นหาได้ กรุณาใส่รูปแบบข้อมูลให้ถูกต้อง
-                    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="alert-message" class="alert alert-danger text-center" style="display: none;">
+                    ไม่สามารถค้นหาได้ กรุณาใส่รูปแบบข้อมูลให้ถูกต้อง
                 </div>
             </div>
         </div>
+    </div>
     <div class="container-xxl my-5" id="result-registration" style="max-height: 500px;display: none;">
         <div class="registration-result mt-5">
             <div class="registration-title registration-container hide-mobile">
@@ -72,140 +74,23 @@
                 <p>สถานะเล่มทะเบียน</p>
             </div>
             <div id="s_results" class="my-5">
+                {{!-- <div class="registration-container">
+                    <div class="hide-mobile">
+                        <p class="small-col">1</p>
+                        <p class="md-col">กฉ 3067</p>
+                        <p>ตาก</p>
+                        <p class="large-col">MNTCC2D23Z0076718</p>
+                        <p>08-01-2024</p>
+                        <p class="medium-col">2028</p>
+                        <p>NISSAN</p>
+                        <p class="big-col">NAVARA NP300 DOUBLE CAB CALBRE BLACK EDITION 2.5 EL</p>
+                        <p>สำนักงานใหญ่</p>
+                        <p class="">รอเล่มทะเบียน</p>
+                    </div>
+                </div> --}}
             </div>
         </div>
     </div>
 </section>
-{{!-- <div class="conatiner-fluid">
-    <footer class="row pt-5 " style="background-color: #00247c;">
-        <div class="col-lg-6 img-footer">
-            <img src="https://itp1.itopfile.com/ImageServer/6703aca54ff69559/216/0/iTopPlus1085268460048.webp" alt="">
-        </div>
-        <div class="col-lg-4 mb-3">
-            <h5 class="text-white"><strong>บริษัท สยามอินเตอร์การประมูล จำกัด</strong></h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-white">180 ถนน รามคำแหง แขวงราษฎร์พัฒนา เขตสะพานสูง กรุงเทพฯ
-                        10240</a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a href="tel:02-119-7111" class="nav-link p-0 text-white">Tel. : 02-119-7111 Fax : 02-119-7100</a>
-                </li>
-                <li class="nav-item mb-0">
-                    <address>
-                        <a href="mailto:info@gmail.com" class="nav-link p-0 text-white">E-mail : info@sia.co.th</a>
-                    </address>
-                </li>
-                <li class="nav-item mb-2">
-                    <a href="https://page.line.me/zio9782c?openQrModal=true" class="nav-link p-0 text-white">Line ID :
-                        @sia.co.th </a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a href="https://www.facebook.com/sia.co.th/?locale=th_TH" class="nav-link p-0 text-white">Facebook
-                        Fanpage :สยามอินเตอร์ประมูล</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</div> --}}
-
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<footer class="text-center text-lg-start text-white" style="background-color: #00247c">
-    <section class="d-flex justify-content-between p-1" >
-        <!-- Left -->
-        {{!-- <div class="me-5">
-            <span>Get connected with us on social networks:</span>
-        </div> --}}
-        <!-- Left -->
-
-        <!-- Right -->
-        {{!-- <div>
-            <a href="" class="text-white me-4">
-                <i class="fab fa facebook-f"></i>
-            </a>
-            <a href="" class="text-white me-4">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="text-white me-4">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="text-white me-4">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="text-white me-4">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="text-white me-4">
-                <i class="fab fa-github"></i>
-            </a>
-        </div> --}}
-        <!-- Right -->
-    </section>
-    <section class="">
-        <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold">บริษัท สยามอินเตอร์การประมูล จำกัด</h6>
-                    <a href="https://www.sia.co.th/"><img src="../assets/images/logo.webp" alt=""></a>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold">ที่อยู่</h6>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p>
-                        <a href="https://maps.app.goo.gl/tpd4CQrKPutvXe737" class="text-white">180 ถนน รามคำแหง <br>แขวง ราษฎร์พัฒนา <br>เขต สะพานสูง<br> กรุงเทพมหานคร <br> 10240</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold">ติดต่อ</h6>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p>
-                        <a href="tel:02-119-7111" class="text-white">Tel. : 02-119-7111</a>
-                    </p>
-                    <p>
-                        <a href="tel:02-119-7100" class="text-white">Fax : 02-119-7100</a>
-                    </p>
-                    <p>
-                        <a href="mailto:info@sia.co.th" class="text-white">E-mail : info@sia.co.th</a>
-                    </p>
-                    <p>
-                        <a href="" class="text-white">Website : www.sia.co.th</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold">โซเซียล</h6>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p><a href="https://page.line.me/zio9782c?openQrModal=true">Line ID : @sia.co.th  </a></p>
-                    <p><a href="https://www.facebook.com/sia.co.th/">Facebook Fanpage : สยามอินเตอร์ประมูล</a></p>
-                </div>
-                <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-        </div>
-        </section>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2024 Copyright:
-            <a class="text-white" href="https://sia.co.th/">sia.co.th</a>
-        </div>
-</footer>
-</div>
-
 <script src="/assets/jquery/jquery.min.js"></script>
 <script src="/js/search_registration.js"></script>

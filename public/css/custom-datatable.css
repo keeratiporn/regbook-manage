@@ -83,6 +83,9 @@ p.custom-col{
     width: 80px;
 }
 
+.md-col{
+    width: 60px !important;
+}
 .registration-container .title, .registration-container .desc{
     display: inline-block;
     width: calc(50% - 25px);

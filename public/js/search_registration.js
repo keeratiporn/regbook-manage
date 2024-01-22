@@ -2,39 +2,39 @@ $(document).ready(function () {
 
     // Check Format To Send 
     const btnSubmit = document.getElementById("btn-submit");
-btnSubmit.addEventListener('click', () => {
-    let searchData = $("#search_registration").val().trim();
-    if (searchData.length <= 8) {
-        let validator = new RegExp('^([a-zA-Zก-ฮ0-9]{1,3})([\ |-]{1,1})([a-zA-Zก-ฮ0-9]{1,4})$', 'gi').test(searchData);
+    btnSubmit.addEventListener('click', () => {
+        let searchData = $("#search_registration").val().trim();
+        if (searchData.length <= 8) {
+            let validator = new RegExp('^([a-zA-Zก-ฮ0-9]{1,3})([\ |-]{1,1})([a-zA-Zก-ฮ0-9]{1,4})$', 'gi').test(searchData);
 
-        if (validator) {                
-            $.ajax({
-                type: "POST",
-                headers: {
-                    'Content-Type':'application/json'
-                },
-                // url: 'http://regbook.sia.co.th/search_vehicle_stock',
-                url: '/search_vehicle_stock',
-                data: JSON.stringify({"search": searchData}),
-                dataType: "JSON",
-                success: function (res) {
-                    console.log(res)
-                    
-                    $('#result-registration').css('display', 'block');
-                    $('#alert-message').css('display', 'none');
+            if (validator) {
+                $.ajax({
+                    type: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    url: 'http://regbook.sia.co.th/search_vehicle_stock',
+                    // url: '/search_vehicle_stock',
+                    data: JSON.stringify({ "search": searchData }),
+                    dataType: "JSON",
+                    success: function (res) {
+                        console.log(res)
 
-                    //call fn
-                    displayResults(res.data);
-                    
+                        $('#result-registration').css('display', 'block');
+                        $('#alert-message').css('display', 'none');
 
-                }
-            });
-        } else {
-            $('#alert-message').css('display', 'block');
-            $('#result-registration').css('display', 'none');
+                        //call fn
+                        displayResults(res.data);
+
+
+                    }
+                });
+            } else {
+                $('#alert-message').css('display', 'block');
+                $('#result-registration').css('display', 'none');
+            }
         }
-    }
-});
+    });
     function displayResults(response) {
         const resultsContainer = document.getElementById("s_results");
         let count = 0;
@@ -48,10 +48,10 @@ btnSubmit.addEventListener('click', () => {
             console.log(result)
             const mobileContent = document.createElement("div");
             mobileContent.className = "hide-mobile";
-            let formattedDateBook = !['',null,undefined].includes(result.date_books) ? 'รับเล่มได้ '+moment(result.date_books).format('DD-MM-YYYY') : 'รอเล่มทะเบียน';
-            
-            if(result.model_sub == null || result.model_sub=="")  {
-                result.model_sub ="";
+            let formattedDateBook = !['', null, undefined].includes(result.date_books) ? 'รับเล่มได้ ' + moment(result.date_books).format('DD-MM-YYYY') : 'รอเล่มทะเบียน';
+
+            if (result.model_sub == null || result.model_sub == "") {
+                result.model_sub = "";
             }
             const formattedDateAuction = moment(result.auction_date).format('DD-MM-YYYY');
 
@@ -103,7 +103,6 @@ btnSubmit.addEventListener('click', () => {
         });
 
     }
-
     // Get Search Registration
 
 });
