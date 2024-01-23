@@ -90,7 +90,7 @@ export const getLogin = async (req, res) => {
                     throw new Error('Invalid token');
                 }
             });
-            res.cookie('token', token, {
+            res.cookie('regbook_token', token, {
                 maxAge: 3600000,
                 httpOnly: true,
             });

@@ -4,7 +4,7 @@ const config = process.env;
 const verifyToken = (req, res, next) => {
     try {
         
-        const token = req.body.token || req.query.token || req.cookies.token || req.headers['x-access-token'] ;
+        const token = req.body.regbook_token || req.query.regbook_token || req.cookies.regbook_token || req.headers['x-access-token'] ;
 
         if (!token) {
             return res.status(403).send('filed...token is request for authen');
