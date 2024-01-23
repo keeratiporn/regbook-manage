@@ -277,9 +277,9 @@ export const UpdateManagement = async (req, res) => {
                                 headers,
                             });
                             if (response.data.success === true) {
-                                console.log(response.data.message);
+                                // console.log(response.data.message);
                             }
-                            console.log('บันทึกข้อมูลสำเร็จ');
+                            // console.log('บันทึกข้อมูลสำเร็จ');
                         } catch (error) {
                             console.error('เกิดข้อผิดพลาด:', error.message);
                             if (error.response.status === 500) {
@@ -295,7 +295,7 @@ export const UpdateManagement = async (req, res) => {
                                         }, {
                                             headers,
                                         });
-                                        console.log('บันทึกข้อมูลสำเร็จ');
+                                        // console.log('บันทึกข้อมูลสำเร็จ');
                                         break;
                                     } catch (error) {
                                         console.error('เกิดข้อผิดพลาด:', error.message);
@@ -367,7 +367,7 @@ export const renderDeposit = async (req, res) => {
 export const getDataTable = async (req, res) => {
 
     const { Car_License } = req.body;
-    console.log(Car_License);
+    // console.log(Car_License);
     // const data = await Deposit.findAll();
     // res.json({
     //     data: data
@@ -766,7 +766,7 @@ export const ajax_search_managements = async (req, res) => {
         }
         res.status(201).json({ res: searchResults, message: "ค้นหาสำเร็จ", status: 201 });
     } catch (error) {
-        console.log(error);
+        // console.log(error);
         res.status(400).json({ message: error, status: 400 });
     }
 }
@@ -973,9 +973,9 @@ export const get_datatable_report = async (req, res) => {
             const newDateFormat = moment(new Date()).add(543, 'years');
             const diffTime = Math.abs(newDateFormat - recordDates);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            console.log('วันที่จบ (recordDates):', recordDates.format('DD/MM/YY'));
-            console.log('ปัจจุบัน (newDateFormat):', newDateFormat.format('DD/MM/YY'));
-            console.log('ห่างกัน (daysDiff):', diffDays);
+            // console.log('วันที่จบ (recordDates):', recordDates.format('DD/MM/YY'));
+            // console.log('ปัจจุบัน (newDateFormat):', newDateFormat.format('DD/MM/YY'));
+            // console.log('ห่างกัน (daysDiff):', diffDays);
             if (diffDays) {
                 record.over_thirty_days = diffDays - 1;
             }

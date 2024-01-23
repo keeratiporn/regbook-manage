@@ -13,12 +13,12 @@ $(document).ready(function () {
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    url: 'http://regbook.sia.co.th/search_vehicle_stock',
-                    // url: '/search_vehicle_stock',
+                    // url: 'http://regbook.sia.co.th/search_vehicle_stock',
+                    url: '/search_vehicle_stock',
                     data: JSON.stringify({ "search": searchData }),
                     dataType: "JSON",
                     success: function (res) {
-                        console.log(res)
+                       // console.log(res)
 
                         $('#result-registration').css('display', 'block');
                         $('#alert-message').css('display', 'none');
@@ -45,7 +45,7 @@ $(document).ready(function () {
             count++;
             const resultContainer = document.createElement("div");
             resultContainer.className = "registration-container";
-            console.log(result)
+            //console.log(result)
             const mobileContent = document.createElement("div");
             mobileContent.className = "hide-mobile";
             let formattedDateBook = !['', null, undefined].includes(result.date_books) ? 'รับเล่มได้ ' + moment(result.date_books).format('DD-MM-YYYY') : 'รอเล่มทะเบียน';

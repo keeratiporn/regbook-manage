@@ -100,7 +100,7 @@ $(document).ready(function () {
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 let errorMessage = textStatus || 'ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้';
-                console.log(errorMessage);
+                // console.log(errorMessage);
                 Swal.fire('เกิดข้อผิดพลาด!', errorMessage, 'error');
             }
         });

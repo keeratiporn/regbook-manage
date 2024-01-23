@@ -9,7 +9,7 @@ async function migrateModel (){
         await MasterData.sync({alter: true});
         await Deposit.sync({alter: true});
         await LogHistory.sync({alter: true});
-        console.log('Models have been synchronized and tables have been created.');
+        // console.log('Models have been synchronized and tables have been created.');
     } catch (error) {
         console.error('Error syncing models:', error);
     }

@@ -93,12 +93,12 @@ $(document).ready(function () {
 
     $('#tbl_management tbody').on('click', 'tr', function () {
         rowData = DataTableResult.row(this).data();
-        console.log(rowData);
+       // console.log(rowData);
     });
 
     $('#history_data tbody').on('click', 'tr', function () {
         searchData = SearchDataTable.row(this).data();
-        console.log(searchData);
+        // console.log(searchData);
     });
 
     // button edit

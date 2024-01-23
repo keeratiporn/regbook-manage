@@ -79,10 +79,10 @@ try {
     });
 
     for (const sheet of sheetData) {
-        console.log(`Processing Sheet Index: ${sheet.sheetIndex}`);
-        console.log('Header:', sheet.header);
-        console.log('Body:', sheet.body);
-        console.log('-----------------------------');
+        // console.log(`Processing Sheet Index: ${sheet.sheetIndex}`);
+        // console.log('Header:', sheet.header);
+        // console.log('Body:', sheet.body);
+        // console.log('-----------------------------');
 
         const rowData = sheet.body.map((row) =>
             sheet.header.reduce((acc, header, index) => {
@@ -100,7 +100,7 @@ try {
             try {
                 //format Date
                 const formattedDate = moment(data.DATE, 'MM/DD/YYYY').format('DD/MM/YYYY');
-                console.log(formattedDate);
+               // console.log(formattedDate);
                 let savedData = await MasterData.create({
                     finance: data.FN,
                     tax_invoice: data['Tax Invoice'],
@@ -150,10 +150,10 @@ try {
                     history: userFirstName,
                     flag: '',
                 });
-                console.log(`1 row added to the database from Sheet Index: ${sheet.sheetIndex}`);
-                console.log('Saved Data:', savedData.get());
+                // console.log(`1 row added to the database from Sheet Index: ${sheet.sheetIndex}`);
+                // console.log('Saved Data:', savedData.get());
             } catch (error) {
-                console.error('Error inserting data:', error);
+                //console.error('Error inserting data:', error);
             }
         }
     }
@@ -166,7 +166,7 @@ try {
 //const baseRoute = '/Users/caronit5/SIA/system-app/public';
 const baseRoute = __dirname;
 const uploadPath = path.resolve(baseRoute, '..', 'public', 'uploads');
-console.log(uploadPath);
+//console.log(uploadPath);
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -183,7 +183,7 @@ router.get("/", auth, renderHome);
 router.get("/management", auth, renderManagement);
 router.get("/get_management", auth, getManagement);
 router.post("/api-file-upload/", upload.single("fileExcel"), uploadXLSX, (req, res) => {
-    console.log(req.file);
+//console.log(req.file);
 })
 router.put("/update", auth, UpdateManagement);
 router.get("/deposit_transfer", auth, renderDeposit);

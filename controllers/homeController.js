@@ -26,7 +26,7 @@ export const search_vehicle_stock = async(req, res) => {
             res.status(400).json({"success":false, "message":"Something Error."})
         }
     }catch(error){
-        console.log.apply(error)
+        // console.log.apply(error)
         res.status(500).json({"success":true, "message":"Something Error."})
     }
     /*

@@ -78,11 +78,11 @@ $('.btn-save-user').click(function (e) {
     const password = $('#password').val();
     const passwordConfirm = $('#passwordConfirm').val();
     const userSelect =('user_select', $('[name=user_option] option:selected').val());
-    console.log(fistname);
-    console.log(lastname);
-    console.log(email);
-    console.log(password);
-    console.log(passwordConfirm);
-    console.log(userSelect);
+    // console.log(fistname);
+    // console.log(lastname);
+    // console.log(email);
+    // console.log(password);
+    // console.log(passwordConfirm);
+    // console.log(userSelect);
     
 });

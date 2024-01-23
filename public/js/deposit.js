@@ -204,7 +204,7 @@ function get_datatable() {
         data: searchData,
         dataType: "JSON",
         success: function (res) {
-            console.log(res);
+            // console.log(res);
             DataTable = $('#tbl_deposit').DataTable({
                 data: res.res.searchResults,
                 processing: true,
@@ -379,7 +379,7 @@ $('#saveModalBtn').click(function (e) {
 
 $('#tbl_deposit tbody').on('click', 'tr', function () {
     rowData = DataTable.row(this).data();
-    console.log(rowData);
+    // console.log(rowData);
 });
 let rowData;
 let Id;
@@ -545,7 +545,7 @@ $("#tbl_history").on('click', '#btn-view-detail', function(){
             const changeDataArray = res.Data.map(item => item.change_data);
             const jsonString = changeDataArray.join('');
             const DataObject = JSON.parse(JSON.parse(jsonString))     
-            console.log(DataObject)
+            // console.log(DataObject)
             $("#Car_Type_Old").text(DataObject["ประเภทเก่า"]);
             $("#Car_Type_New").text(DataObject["ประเภทใหม่"]);
             $("#Date_Of_Year_Old").text(DataObject["วันที่เก่า"]);
