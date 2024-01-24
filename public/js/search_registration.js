@@ -58,16 +58,16 @@ $(document).ready(function () {
             //const DateBookStatus = formattedDateBook == null ? formattedDateBook : 'รับเล่มได้';
             mobileContent.innerHTML =
                 `
-            <p class="small-col">${count}</p>
-            <p class="md-col">${result.regist}</p>
-            <p>${result.province}</p>
-            <p class="large-col">${result.chassis_number}</p>
-            <p>${formattedDateAuction}</p>
-            <p class="medium-col">${result.sequence}</p>
-            <p>${result.product_brand}</p>
-            <p class="big-col">${result.model} ${result.model_sub}</p>
-            <p>${result.auction_location}</p>
-            <p>${formattedDateBook}</p>
+            <p class="vertical-top small-col">${count}</p>
+            <p class="vertical-top md-col">${result.regist}</p>
+            <p class="vertical-top">${result.province}</p>
+            <p class="vertical-top large-col">${result.chassis_number}</p>
+            <p class="vertical-top">${formattedDateAuction}</p>
+            <p class="vertical-top medium-col">${result.sequence}</p>
+            <p class="vertical-top">${result.product_brand}</p>
+            <p class="vertical-top big-col">${result.model} ${result.model_sub}</p>
+            <p class="vertical-top">${result.auction_location}</p>
+            <p class="vertical-top">${formattedDateBook}</p>
         `;
 
             const desktopContent = document.createElement("div");

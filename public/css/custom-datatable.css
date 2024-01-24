@@ -84,6 +84,10 @@ p.custom-col{
     width: 80px;
 }
 
+.vertical-top{
+    vertical-align: top;
+}
+
 .md-col{
     width: 70px !important;
 }
@@ -91,15 +95,15 @@ p.custom-col{
     display: inline-block;
     width: calc(50% - 25px);
     margin: 10px 10px 10px;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 .registration-container .title{
-    font-size: 18px;
+    font-size: 16px !important;
     line-height: 19px;
     font-weight: 700;
 }
 .registration-container .desc{
-    font-size: 18px;
+    font-size: 16px !important;
     line-height: 19px;
     font-weight: 400;
 }
