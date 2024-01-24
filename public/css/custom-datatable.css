@@ -95,15 +95,15 @@ p.custom-col{
     display: inline-block;
     width: calc(50% - 25px);
     margin: 10px 10px 10px;
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
 .registration-container .title{
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 19px;
     font-weight: 700;
 }
 .registration-container .desc{
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 19px;
     font-weight: 400;
 }
@@ -117,6 +117,10 @@ p.custom-col{
 .big-col {
     vertical-align: top;
     width: 250px !important;
+}
+
+#s_results > div > div.hide-desktop > div:nth-child(15){
+    vertical-align:top;
 }
 
 @media (min-width: 576px) { 
