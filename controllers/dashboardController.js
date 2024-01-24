@@ -736,7 +736,7 @@ export const ajax_search_managements = async (req, res) => {
         if (Auction_Round) {
             const searchAuctionRound = await MasterData.findAll({
                 where: {
-                    entry_times: {
+                    place: {
                         [Op.like]: `%${Auction_Round}%`
                     }
                 },
