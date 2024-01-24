@@ -65,9 +65,9 @@ $(document).ready(function () {
             <p>${formattedDateAuction}</p>
             <p class="medium-col">${result.sequence}</p>
             <p>${result.product_brand}</p>
-            <p>${result.model} ${result.model_sub}</p>
+            <p class="big-col">${result.model} ${result.model_sub}</p>
             <p>${result.auction_location}</p>
-            <p class="big-col">${formattedDateBook}</p>
+            <p>${formattedDateBook}</p>
         `;
 
             const desktopContent = document.createElement("div");
