@@ -42,6 +42,7 @@ body {
 .registration-container{
     border-radius: 5px;
     padding: 20px;
+    width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
     margin: 10px 0px;
 }
@@ -84,7 +85,7 @@ p.custom-col{
 }
 
 .md-col{
-    width: 60px !important;
+    width: 70px !important;
 }
 .registration-container .title, .registration-container .desc{
     display: inline-block;
@@ -108,6 +109,11 @@ p.custom-col{
     display: none;
 }
 
+.big-col {
+    vertical-align: top;
+    width: 250px !important;
+}
+
 @media (min-width: 576px) { 
     .hide-desktop {
         display: block; 
@@ -115,6 +121,7 @@ p.custom-col{
     .hide-mobile {
         display: none; 
     }
+    
 }
 
 @media (min-width: 768px) {
@@ -124,8 +131,8 @@ p.custom-col{
     .hide-mobile {
         display: none; 
     }    
+    
 }
-
 @media (min-width: 992px) { 
     .hide-desktop {
         display: none; 
@@ -133,14 +140,14 @@ p.custom-col{
     .hide-mobile {
         display: block; 
     }
-
+    
 }
-@media (max-width: 991px) {
-    footer {
-        display: none;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .big-col {
+        width: 70px !important;
     }
 }
-
 
 .swal2-popup {
     font-size: 1rem !important;
