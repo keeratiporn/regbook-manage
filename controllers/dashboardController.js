@@ -648,6 +648,7 @@ export const ajax_search_managements = async (req, res) => {
         Date_Send_Trans,
         Date_Receive_Trans_Start,
         Car_License,
+        Car_Chassis,
         Auction_Name,
         Auction_Round,
         Code_Finance,
@@ -720,6 +721,17 @@ export const ajax_search_managements = async (req, res) => {
                 }
             });
             searchResults.searchResults = searchCarLicense;
+        }
+
+        if (Car_Chassis) {
+            const searchCarChassis = await MasterData.findAll({
+                where: {
+                    tank_code: {
+                        [Op.like]: `%${Car_Chassis}%`
+                    }
+                }
+            });
+            searchResults.searchResults = searchCarChassis;
         }
 
         if (Auction_Name) {

@@ -522,6 +522,7 @@ $(document).ready(function () {
             Date_Send_Trans: $("#Date_Send_Trans_Search").val(),
             Date_Receive_Trans_Start: $("#Date_Receive_Trans_Search").val(),
             Car_License: $("#Car_License").val(),
+            Car_Chassis: $("#Car_Chassis").val(),
             Auction_Name: $("#Auction_Name").val(),
             Auction_Round: $("#Auction_Round").val(),
             Code_Finance: $("#Code_Finance").val(),
